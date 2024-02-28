@@ -1,0 +1,19 @@
+.box {
+  background: blue;
+  height: 400px;
+  position: relative;
+}
+.line {
+  background: red;
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+}
+._horizontal {
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  height: auto;
+  width: 20px;
+}
