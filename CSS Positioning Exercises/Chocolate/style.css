@@ -1,0 +1,25 @@
+.chocolate {
+  width: 600px;
+  height: 300px;
+  background: black;
+  position: relative;
+  padding: 2px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    height: 4px;
+    width: calc(100% - 4px);
+    background: brown;
+  }
+}
+
+.box {
+  background: #66320e;
+  height: 140px;
+  width: calc(100% / 4 - 8px);
+  margin: 5px 4px;
+  float: left;
+}
