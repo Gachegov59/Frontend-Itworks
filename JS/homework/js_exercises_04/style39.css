@@ -1,0 +1,37 @@
+main {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: #e67e22;
+  font-size: 40px;
+}
+
+.validate-input {
+  width: 1ch;
+  padding: 15px;
+  font-size: 30px;
+  background: rgba(39, 174, 96, 0.5);
+  border: none;
+}
+.validate-input[disabled] {
+  background: rgba(39, 174, 96, 0.3);
+}
+
+.controls {
+  margin-top: 20px;
+}
+.controls button {
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  background: rgba(39, 174, 96, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.controls button:hover {
+  background: rgba(39, 174, 96, 0.5);
+}/*# sourceMappingURL=style39.css.map */

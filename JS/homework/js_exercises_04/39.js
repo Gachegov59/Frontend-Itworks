@@ -1,4 +1,3 @@
-
 // JavaScript – Multiple inputs copy
 // The following exercise contains the following subjects:
 // ● events
@@ -11,6 +10,7 @@
 // Features:
 // 1. The user is allowed to type the values manually. After
 // each value is inserted, the next input will be focused.
+
 // 2. The user is allowed to paste the verification code.
 // 3. An extra challenge will be to auto submit the form once all
 // inputs all populated.
@@ -24,3 +24,61 @@
 // paste event.
 // Google “clipboardData” to find out how to get the value of
 // a paste event.
+
+const form = document.querySelector(".form");
+const validateInputs = document.querySelectorAll(".validate-input");
+const btnSubmit = document.querySelector(".btn-submit");
+const btnClear = document.querySelector(".btn-clear");
+
+checkInputsOnFull();
+
+function checkInputsOnFull() {
+  const allInputsOn = [...validateInputs].every(
+    (input) => input.value.length > 0
+  );
+  if (allInputsOn) {
+    form.submit();
+    btnSubmit.disabled = false;
+  } else btnSubmit.disabled = true;
+}
+
+function inputStep() {
+  for (let i = 0; i < validateInputs.length; i++) {
+    if (validateInputs[i].value.length > 0 && i < validateInputs.length - 1) {
+      validateInputs[i + 1].disabled = false;
+      validateInputs[i].nextElementSibling.focus();
+    } else {
+      if (i < validateInputs.length - 1) {
+        validateInputs[i + 1].disabled = true;
+      }
+    }
+  }
+  checkInputsOnFull();
+}
+
+// Listeners
+form.addEventListener("keyup", (e) => {
+  if (e.keyCode === 8 && e.target.id !== "input1") {
+    e.target.previousElementSibling.focus();
+    return;
+  }
+  inputStep();
+});
+
+form.addEventListener("paste", (e) => {
+  e.preventDefault();
+  const pastData = e.clipboardData.getData("text");
+  for (let i = 0; i < validateInputs.length; i++) {
+    validateInputs[i].value = pastData.charAt(i);
+  }
+  inputStep();
+});
+
+//BTNS
+btnSubmit.addEventListener("click", (e) => {
+  form.submit();
+});
+
+btnClear.addEventListener("click", (e) => {
+  validateInputs.forEach((input) => (input.value = ""));
+});

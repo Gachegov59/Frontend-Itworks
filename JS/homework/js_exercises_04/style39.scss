@@ -1,0 +1,41 @@
+main {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: #e67e22;
+  font-size: 40px;
+}
+
+.form {
+  // margin: auto;
+}
+
+.validate-input {
+  width: 1ch;
+  padding: 15px;
+  font-size: 30px;
+  background: rgba(#27ae60, 0.5);
+  border: none;
+  &[disabled] {
+    background: rgba(#27ae60, 0.3);;
+  }
+}
+
+.controls {
+  margin-top: 20px;
+  button {
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    background: rgba(#27ae60, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background: rgba(#27ae60, 0.5);
+    }
+  }
+}
