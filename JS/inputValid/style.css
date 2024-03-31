@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+.form {
+  padding: 40px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.btn {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  background: #70b6c2;
+  border: none;
+  color: white;
+  margin-left: auto;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 40px;
+  &.isValid {
+    background: rgba(101, 162, 101, 0.3);
+  }
+  &.isNotValid {
+    background: rgba(161, 71, 71, 0.3);
+  }
+}
