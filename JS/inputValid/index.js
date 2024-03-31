@@ -1,5 +1,6 @@
 const input = document.querySelector(".input");
 const btn = document.querySelector(".btn");
+const colorPicker = document.querySelector(".colorPicker");
 
 // this function for valid hex color throught regex string -> return boolean
 function isValidHexColor(color) {
@@ -28,3 +29,8 @@ btn.addEventListener("click", (event) => {
     document.body.style.backgroundColor = input.value;
   else alert("Please enter  valid hex color code");
 });
+
+// This listener for input type color
+colorPicker.addEventListener("input", (event) => {
+    input.value = event.target.value;
+})

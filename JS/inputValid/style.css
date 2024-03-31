@@ -29,3 +29,8 @@
     background: rgba(161, 71, 71, 0.3);
   }
 }
+
+.colorPicker {
+    display: block;
+    margin: auto;
+}
