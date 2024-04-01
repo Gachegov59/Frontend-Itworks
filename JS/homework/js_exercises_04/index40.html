@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>40</title>
+    <script src="40.js" defer></script>
+  </head>
+  <body>
+    <div class="controls">
+      <button class="control _increase">+</button>
+      <button class="control _decrease">-</button>
+    </div>
+  </body>
+  <h1 class="text">Сhange my size!</h1>
+</html>
+
+<style>
+  body {
+    max-width: 500px;
+    margin: 50px auto;
+  }
+  h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+  .controls {
+    max-width: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .control {
+    padding: 10px;
+    font-size: 24px;
+    width: 50px;
+    border: none;
+    background: #3498db;
+    cursor: pointer;
+    &:hover {
+      transition: all 0.3s ease;
+      opacity: 0.8;
+    }
+    &._decrease {
+      background: #e67e22;
+    }
+  }
+</style>

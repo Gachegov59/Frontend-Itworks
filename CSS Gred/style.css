@@ -1,0 +1,96 @@
+.chat {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 13fr 1fr;
+  grid-template-areas:
+    "m c"
+    "m s";
+}
+
+/* MENU-PANEL */
+.menu-panel {
+  display: grid;
+  grid-area: m;
+  padding: 10px;
+  background: #8e44ad;
+}
+.nav {
+  display: grid;
+}
+.nav-element {
+  display: grid;
+  padding: 10px;
+  height: 20px;
+  background: #9b59b6;
+}
+
+/* CHAT-VIEW */
+.chat-view {
+  display: grid;
+  grid-area: c;
+  padding: 10px;
+  background: rgb(236 240 241);
+}
+.messages {
+  display: grid;
+}
+.message {
+  display: grid;
+  grid-template-columns: max-content 14fr;
+  height: fit-content;
+  width: min-content;
+  padding: 10px;
+  font-size: 22px;
+  font-family: cursive;
+  background: #bdc3c7;
+  &._mine {
+    justify-self: end;
+    background: #2ecc71;
+  }
+}
+.time {
+  align-self: flex-end;
+  font-size: 12px;
+}
+.text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* SEARCH-PANNEL */
+.search-pannel {
+  grid-area: s;
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  height: 50px;
+}
+
+.input {
+  outline: none;
+  border: none;
+  &::placeholder {
+    color: gray;
+  }
+}
+
+
+.button {
+  background: blueviolet;
+  color: white;
+  text-transform: uppercase;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}
+
+/* BASE */
+h1 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus {
+  outline: none;
+}

@@ -1,0 +1,33 @@
+.parent {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.item {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.one {
+  background-color: green;
+}
+.two {
+  background-color: blue;
+  right: 0;
+}
+.three {
+  background-color: yellow;
+  bottom: 0;
+}
+.four {
+  background-color: blueviolet;
+  bottom: 0;
+  right: 0;
+}
+.five {
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

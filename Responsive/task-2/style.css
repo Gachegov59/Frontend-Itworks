@@ -1,0 +1,30 @@
+
+ul {
+    list-style-type: none;
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-wrap: wrap;
+  /* flex-direction: row-everse; */
+  li {
+    white-space: nowrap;
+    margin: 0 10px;
+    flex: 1 1 15%;
+    text-align: right;
+  }
+}
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}

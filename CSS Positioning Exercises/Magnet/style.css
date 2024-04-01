@@ -1,0 +1,22 @@
+.magnet {
+  height: 500px;
+  width: 600px;
+  background: red;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+}
+
+.top {
+  background: rgb(181, 171, 171);
+  height: 140px;
+}
+.background-block {
+  background: white;
+  position: absolute;
+  width: 350px;
+  height: 380px;
+  top: 0;
+  left: 50%;
+  border-radius: 0 0 10px 10px;
+  transform: translate(-50%);
+}
