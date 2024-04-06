@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "John",
+        "last": "Mason"
+      },
+      "location": {
+        "street": {
+          "number": 4144,
+          "name": "E Pecan St"
+        },
+        "city": "Ennis",
+        "state": "Hawaii",
+        "country": "United States",
+        "postcode": 70045,
+        "coordinates": {
+          "latitude": "88.1644",
+          "longitude": "-65.2746"
+        },
+        "timezone": {
+          "offset": "+3:00",
+          "description": "Baghdad, Riyadh, Moscow, St. Petersburg"
+        }
+      },
+      "email": "john.mason@example.com",
+      "login": {
+        "uuid": "8886343a-ba97-4a06-9ce9-fa8338138846",
+        "username": "tinymeercat988",
+        "password": "sailor",
+        "salt": "RQKEOdAd",
+        "md5": "20ee7b60c97ccabebdf08d3c1cc676a0",
+        "sha1": "38ea145cd9aac1cf80eb79bd9509489db6f0a433",
+        "sha256": "889ab55bdd763fd7a76209042d00f68e09be52177811b664c26036becd9fe881"
+      },
+      "dob": {
+        "date": "1983-01-25T12:08:38.338Z",
+        "age": 41
+      },
+      "registered": {
+        "date": "2013-06-07T10:32:21.348Z",
+        "age": 10
+      },
+      "phone": "(350) 355-3316",
+      "cell": "(264) 546-7959",
+      "id": {
+        "name": "SSN",
+        "value": "144-38-6419"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/19.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/19.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/19.jpg"
+      },
+      "nat": "US"
+    }
+  ],
+  "info": {
+    "seed": "85a4c1f2aa8058ca",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}

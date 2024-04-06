@@ -5,15 +5,17 @@ Array Order Methods Write a function that takes the array of contacts and return
 - Write a function that concatenates the first and last name of each contact into a new array of full names.
 - Looping Through Arrays Write a loop that iterates through the array and logs each contact's email to the console. 
 - Write a function that takes an ID as a parameter and returns the contact with that ID. 
-- Create a function that counts how many contacts are from a specific country. The country should be a parameter of the function. Write a function that returns a new array of contacts that are within a given age range, e.g., 25 to 35 years old.
+- Create a function that counts how many contacts are from a specific country. The country should be a parameter of the function. 
+- Write a function that returns a new array of contacts that are within a given age range, e.g., 25 to 35 years old.
 
 
 Small App Assignment: Contact Search Tool
-Build a small web application that allows users to search for contacts by name or phone number.
-Create a simple HTML page with an input field and a submit button.
-Implement a function to handle the submit event.
-Determine if the input is a string (name) or a number (phone number).
+- Build a small web application that allows users to search for contacts by name or phone number.
+- Create a simple HTML page with an input field and a submit button.
+- Implement a function to handle the submit event.
+- Determine if the input is a string (name) or a number (phone number).
+
 Based on the input type, search the contacts array:
-If it's a string, filter contacts whose first or last name contains the string. Consider case sensitivity.
-If it's a number, find contacts whose phone number matches.
-Display the matching contacts below the input field. You can list their names and phone numbers as a simple unordered list in HTML. Add styling to improve the layout.
+- If it's a string, filter contacts whose first or last name contains the string. Consider case sensitivity.
+- If it's a number, find contacts whose phone number matches.
+- Display the matching contacts below the input field. You can list their names and phone numbers as a simple unordered list in HTML. Add styling to improve the layout.

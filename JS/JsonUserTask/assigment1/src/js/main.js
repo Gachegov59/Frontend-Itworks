@@ -64,7 +64,7 @@ const countContactsByCountry = (country) => {
   );
 };
 
-// console.log("countContactsByCountry()", countContactsByCountry("New Zealand"));
+console.log("countContactsByCountry()", countContactsByCountry("New Zealand"));
 
 /**
  * - Write a function that returns a new array of contacts
@@ -77,3 +77,13 @@ const hetContactsByAgeRange = (minAge, maxAge) => {
   );
 };
 // console.log('hetContactsByAgeRange()', hetContactsByAgeRange(25, 35))
+
+const countCountry = (array) => {
+  return array.reduce((acc, contact) => {
+    if (!acc[contact.location.country]) {
+      acc[contact.location.country] = 0;
+    }
+    acc[contact.location.country]++;
+    return acc;
+  }, {});
+};
